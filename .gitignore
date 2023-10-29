@@ -1,0 +1,11 @@
+venv
+/global
+.idea
+extension
+/geckodriver
+mundo.xlsx
+pais.xlsx
+ciudad.xlsx
+links_ciudad.txt
+links_mundo.txt
+link_pais.txt
