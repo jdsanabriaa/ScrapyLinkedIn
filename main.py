@@ -30,11 +30,11 @@ def links_ciudad():
     elements = driver.find_elements("xpath", '//*[@id="main-content"]/section[2]/ul/li[*]/div/a')
     for element in elements:
         href = element.get_attribute("href")
-        with open("./links_ciudad.txt", "a") as f:
+        with open("Links/links_ciudad.txt", "a") as f:
             f.write(href + '\n')
 
 def ciudad():
-    archivo = open('./links_ciudad.txt', 'r')
+    archivo = open('Links/links_ciudad.txt', 'r')
     wb = Workbook()
     hoja_activa = wb.active
     fila = 1
@@ -111,11 +111,11 @@ def links_pais():
     elements = driver.find_elements("xpath", '//*[@id="main-content"]/section[2]/ul/li[*]/div/a')
     for element in elements:
         href = element.get_attribute("href")
-        with open("./links_pais.txt", "a") as f:
+        with open("Links/links_pais.txt", "a") as f:
             f.write(href + '\n')
 
 def pais():
-    archivo = open('./links_pais.txt', 'r')
+    archivo = open('Links/links_pais.txt', 'r')
     wb = Workbook()
     hoja_activa = wb.active
     fila = 1
@@ -196,7 +196,7 @@ def links_mundo():
         if index >= 50:
             break
         href = element.get_attribute("href")
-        with open("./links_mundo.txt", "a") as f:
+        with open("Links/links_mundo.txt", "a") as f:
             f.write(href + '\n')
 
     driver.get(
@@ -207,7 +207,7 @@ def links_mundo():
         if index >= 50:
             break
         href = element.get_attribute("href")
-        with open("./links_mundo.txt", "a") as f:
+        with open("Links/links_mundo.txt", "a") as f:
             f.write(href + '\n')
 
     driver.get(
@@ -218,11 +218,11 @@ def links_mundo():
         if index >= 50:
             break
         href = element.get_attribute("href")
-        with open("./links_mundo.txt", "a") as f:
+        with open("Links/links_mundo.txt", "a") as f:
             f.write(href + '\n')
 
 def mundo():
-    archivo = open('./links_mundo.txt', 'r')
+    archivo = open('Links/links_mundo.txt', 'r')
     wb = Workbook()
     hoja_activa = wb.active
     fila = 1
